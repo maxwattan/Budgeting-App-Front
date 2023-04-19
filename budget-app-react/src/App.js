@@ -6,10 +6,10 @@ import { useState, useEffect } from "react";
 
 //Pages
 import Home from "./Pages/Home";
-import Edit from "./Pages/Edit"
-import Show from "./Pages/Show"
-import Index from "./Pages/Index"
-import New from "./Pages/New"
+import Edit from "./Pages/Edit";
+import Show from "./Pages/Show";
+import Index from "./Pages/Index";
+import New from "./Pages/New";
 import FourOFour from "./Pages/FourOFour";
 
 //Components
@@ -31,7 +31,7 @@ function App() {
 
   const addTransaction = (newTransaction) => {
     axios
-    .post(`${API}/transactions/`, newTransaction)
+    .post(`${API}/transactions`, newTransaction)
     .then((response)=>{
       setTransactions([...transactions, newTransaction])
     })
@@ -56,7 +56,8 @@ function App() {
       const updateArray = [...transactions]
       updateArray[index] = updatedTransaction
       setTransactions(updateArray)
-  })}
+  }).catch((e) => console.error("catch", e))
+}
 
   return (
     <div className="App">

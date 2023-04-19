@@ -6,13 +6,15 @@ export default function NavBar() {
     <div>
 
     <nav>
-        <img src={logo} alt="logo" width="150px"></img> 
-      <h1>
-        <Link to="/transactions"> Transactions </Link>
+    
+        {/* <img src={logo} alt="logo" width="150px"></img>  */}
+      
+        <Link to="/transactions" className="Appname"> Budgtr </Link>
       <button>
         <Link to="/transactions/new"> New Transactions </Link>
       </button>
-      </h1>
+
+      
     </nav>
     </div>
   );

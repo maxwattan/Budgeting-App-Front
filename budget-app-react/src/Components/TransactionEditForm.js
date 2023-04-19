@@ -47,7 +47,7 @@ function TransactionEditForm({updateTransaction}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    updateTransaction();
+    updateTransaction(transaction, index);
     navigate(`/transactions/${index}`)
   };
   
@@ -63,21 +63,22 @@ function TransactionEditForm({updateTransaction}) {
           placeholder="Month/Date/Year"
           required
         />
-       
+       <br />
         <label htmlFor="category">Category:</label>
         <input
           id="category"
           type="text"
           required
           value={transaction.category}
-          placeholder="Category Type: Food, Bills, Income "
+          placeholder="Category Type: Food, Bills, Income, etc..."
           onChange={handleTextChange}
         />
-
+<br />
         <label htmlFor="amount">Amount:</label>
         <input
           id="amount"
           type="number"
+          name="amount"
           value={transaction.amount}
           placeholder="$ X.XX"
           onChange={handleTextChange}

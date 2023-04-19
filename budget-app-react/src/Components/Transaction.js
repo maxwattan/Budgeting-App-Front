@@ -8,7 +8,7 @@ function Transaction({transaction, index}) {
         <p>{transaction.date}</p>
         <Link to={`/transactions/${index}`}>{transaction.category}</Link>
         <p>{transaction.amount}</p>
-        <Link to={`/transactions/${index}`}></Link>
+        <Link to={`/transactions/${index}`}>-</Link>
     </div>
   )
 }

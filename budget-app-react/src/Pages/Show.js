@@ -9,10 +9,13 @@ function Show({deleteTransaction, transactions}) {
   return (
     <div className='Show'>
         <h2>Show</h2>
+        <section>
         <TransactionDetails 
         transaction={transaction}
         index={index}
         deleteTransaction={deleteTransaction}/>
+
+        </section>
     </div>
   )
 }
