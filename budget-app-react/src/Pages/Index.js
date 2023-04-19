@@ -5,7 +5,7 @@ function Index({transactions}) {
   console.log(transactions)
   return (
     <div className='Index'>
-        <h2>Index</h2>
+        {/* <h2>Index</h2> */}
         <Transactions transactions={transactions}/>
     </div>
   )
