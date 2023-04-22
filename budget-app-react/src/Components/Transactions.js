@@ -22,20 +22,26 @@ function Transactions({transactions}) {
     
     return (
       <div>
-        <h1>Transactions</h1>
-        <h1 className="total">Bank Account Total: $/ <img src={logo} alt="logo" width="40px"></img> 
-          <span style={{ color: getColor(total) }}> {total}</span>
+        <h1 className="total">Bank Account Total:  
         </h1>
+        <br></br>
+          <span style={{ color: getColor(total) }}> $ / <img src={logo} alt="logo" width="30px"></img> {total} </span>
+          <br></br>
+          <br></br>
+        <h1>Transactions</h1>
+          <br></br>
+        
         <div className="Transactions">
+          <br></br>
       <section>
         <table>
           <thead>
             <tr>
-              <th>Date</th>
-              <th>From</th>
-              <th>Categories</th>
-              <th>Amount $/<img src={logo} alt="logo" width="30px"></img>  </th>
-              <th>Edit</th>
+              <th> Date </th>
+              <th> From </th>
+              <th> Categories </th>
+              <th> Amount $/<img classname="amount-img" src={logo} alt="logo" width="25px"></img>  </th>
+              <th> Edit </th>
             </tr>
           </thead>
           <tbody>

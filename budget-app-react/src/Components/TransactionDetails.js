@@ -40,18 +40,18 @@ function TransactionDetails(transactions) {
           <Link to={`/transactions`}>
             <button>Back</button>
           </Link>
-        </div>
-    
-        <div>
           {" "}
           <Link to={`/transactions/${index}/edit`}>
             <button>Edit</button>
           </Link>
-        </div>
-        <div>
           {" "}
           <button onClick={handleDelete}>Delete</button>
         </div>
+        </div>
+    
+        <div>
+        </div>
+        <div>
       </div>
     </article>
   );

@@ -1,3 +1,63 @@
+img .amount-img{
+  background-color: transparent;
+}
+img {
+ background-color: transparent;
+ border-radius: 20px;
+}
+
+img:hover {
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 10px yellow;
+}
+
+img.background {
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 10px yellow;
+}
+/* .background {
+  background-image: url(./Components/Background.jpeg);
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  
+} */
+
+
+
+div .Home{
+  background-color: black;
+}
+
+div.App{
+  background-color: black;
+}
+
+html {
+  background-color: black;
+}
+
+section a {
+  color: blue;
+}
+
+section a:hover{
+  box-shadow: 1px 1px 15px 10px yellow;
+  background-color: yellow;
+  border-radius: 5px;
+  color: red;
+
+}
+
+span {
+  
+  font-size: xx-large;
+  box-shadow: 1px 1px 15px 10px yellowgreen;
+  background-color: yellowgreen;
+  border-radius: 8px;
+}
+
+
 nav {
   background: aqua;
   display: flex;
@@ -16,10 +76,12 @@ label {
 }
 nav a {
   color: red;
+  font-size: larger;
 }
 p{
   color: turquoise;
   font-size: larger;
+  font-weight: bolder;
 }
 
 p.moon{
@@ -27,23 +89,23 @@ p.moon{
   font-weight: bolder;
 }
 
-/* .background {
-  background-image: url(./Components/Background.jpeg);
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-} */
 h1{
-  color : turquoise
+  color : turquoise;
+  text-decoration: underline;
 }
 
 h2 {
-  color : turquoise
+  color : turquoise;
+  
+}
+h3 {
+  color: turquoise;
 }
 
 th{
   color: yellowgreen;
   font-size: x-large;
+  text-decoration: underline;
 }
 
 button{
@@ -61,6 +123,7 @@ button:hover {
 
 
 
+
 nav a.Appname {
 color: yellowgreen;
 font-size: 50px;
@@ -71,6 +134,7 @@ border-radius: 15px;
 
 nav a.Appname:hover{
   box-shadow: 2px 2px 15px 10px yellow;
+  background-color: yellow;
 }
 
 table {
@@ -96,9 +160,11 @@ textarea {
   display: block;
   width: 50%;
   margin: auto;
+  border-radius: 20px;
+  font-size: larger;
 }
 input[type="submit"] {
-  width: 6%;
+  width: 8%;
   border-radius: 15px;
   background-color: greenyellow;
   font-size: larger;
@@ -124,10 +190,6 @@ main{
 
 a {
   text-decoration: none;
-}
-img {
-  box-shadow: 2px 2px 28px 8px yellow;
- background-color: transparent;
 }
 .App {
   text-align: center;

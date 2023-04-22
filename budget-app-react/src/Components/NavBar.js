@@ -10,9 +10,8 @@ export default function NavBar() {
       
         <Link to="/transactions" className="Appname"> Budgtr </Link>
 
-        <img src={logo} alt="logo" width="120px"></img> 
-
-
+        <Link to="/"><img src={logo} alt="logo" width="120px"></img> </Link>
+        
       <button>
         <Link to="/transactions/new"> New Transactions </Link>
       </button>
