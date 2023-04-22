@@ -11,39 +11,12 @@ function TransactionEditForm({updateTransaction}) {
     date: "",
     category: "",
     amount: "",
+    from: ""
   });
 
   const handleTextChange = (event) => {
     setTransaction({ ...transaction, [event.target.id]: event.target.value });
   };
-
-  // const handleCheckboxChange = () => {
-  //   setTransaction({ ...transaction, isFavorite: !transaction.isFavorite });
-  // };
-//populate the edit form with data from the data base
-  // after the user edits, make a put request
-  // useEffect(() => {
-  //   axios
-  //     .get(`${API}/transactions/${index}`)
-  //     .then((response) => {
-  //       setTransaction(response.data)
-  //     })
-  //       .catch((e) => console.error(e))
-
-  // }, [index]);
-
-
-  // const updateTransaction = () => {
-  //   axios
-  //     .put(`${API}/transactions/${index}`, transaction)
-  //     .then((response) => {
-  //       setTransaction(response.data);
-        // navigate(`/transactions/${index}`)
-  //     }
-  //     )
-  //     .catch((e) => console.warn("warn", e));
-  // }
-
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -86,6 +59,18 @@ function TransactionEditForm({updateTransaction}) {
         />
        
         <br />
+        <label htmlFor="from">From:</label>
+       <br />
+        <input
+          id="from"
+          type="text"
+          name="from"
+          value={transaction.from}
+          placeholder="Name of: Person, Business, etc..."
+          onChange={handleTextChange}
+         
+        />
+        <br></br>
 
         <input type="submit" />
       </form>

@@ -6,10 +6,13 @@ export default function NavBar() {
     <div>
 
     <nav>
-    
-        {/* <img src={logo} alt="logo" width="150px"></img>  */}
+      
       
         <Link to="/transactions" className="Appname"> Budgtr </Link>
+
+        <img src={logo} alt="logo" width="120px"></img> 
+
+
       <button>
         <Link to="/transactions/new"> New Transactions </Link>
       </button>

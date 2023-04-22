@@ -1,4 +1,5 @@
 import Transaction from "./Transaction"
+import logo from "./logo.png"
 
 function Transactions({transactions}) {
   //bucket accumulate
@@ -22,17 +23,18 @@ function Transactions({transactions}) {
     return (
       <div>
         <h1>Transactions</h1>
-        <p>Bank Account Total: $
-          <span style={{ color: getColor(total) }}>{total}</span>
-        </p>
+        <h1 className="total">Bank Account Total: $/ <img src={logo} alt="logo" width="40px"></img> 
+          <span style={{ color: getColor(total) }}> {total}</span>
+        </h1>
         <div className="Transactions">
       <section>
         <table>
           <thead>
             <tr>
               <th>Date</th>
+              <th>From</th>
               <th>Categories</th>
-              <th>Amount $</th>
+              <th>Amount $/<img src={logo} alt="logo" width="30px"></img>  </th>
               <th>Edit</th>
             </tr>
           </thead>

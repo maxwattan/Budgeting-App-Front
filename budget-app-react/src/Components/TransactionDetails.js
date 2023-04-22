@@ -31,22 +31,23 @@ function TransactionDetails(transactions) {
   return (
     <article>
       <h3>Date: {transaction.date}</h3>
-      <h3>Category:{transaction.category}</h3>
-      <h3>Amount:{transaction.amount}</h3>
+      <h3>From: {transaction.from}</h3>
+      <h3>Category: {transaction.category}</h3>
+      <h3>Amount: {transaction.amount}</h3>
       <div className="showNavigation">
         <div>
           {" "}
           <Link to={`/transactions`}>
             <button>Back</button>
           </Link>
-        </div><br />
+        </div>
     
         <div>
           {" "}
           <Link to={`/transactions/${index}/edit`}>
             <button>Edit</button>
           </Link>
-        </div><br />
+        </div>
         <div>
           {" "}
           <button onClick={handleDelete}>Delete</button>

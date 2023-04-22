@@ -10,6 +10,7 @@ function TransactionNewForm({addTransaction}) {
     date: "",
     category: "",
     amount: "",
+    from: "",
   });
   
 

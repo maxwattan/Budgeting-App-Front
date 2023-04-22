@@ -3,14 +3,37 @@ import {Link} from "react-router-dom"
 
 function Transaction({transaction, index}) {
   return (
-    <div>
-      
+    
+      <tr>
+        
+        <td>
+
         <p>{transaction.date}</p>
-        <Link to={`/transactions/${index}`}>{transaction.category}</Link>
+        </td>
+        <td>
+
+          <p>{transaction.from}</p>
+        </td>
+
+        <td>
+    
+        <p>{transaction.category}</p>
+
+        </td>
+
+        <td>
         <p>{transaction.amount}</p>
-        <Link to={`/transactions/${index}`}>-</Link>
-    </div>
+        </td>
+
+        <td>
+          <Link to ={`/transactions/${index}`}> edit </Link>
+        </td>
+      </tr>
+     
+    
   )
 }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
 
 export default Transaction
