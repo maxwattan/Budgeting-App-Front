@@ -26,7 +26,7 @@ function Transaction({transaction, index}) {
         </td>
 
         <td>
-          <Link to ={`/transactions/${index}`}> | edit | </Link>
+          <Link to ={`/transactions/${index}`}> <p className='moneyEdit'>💵</p> </Link>
         </td>
         <br></br>
       </tr>

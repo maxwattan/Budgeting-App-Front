@@ -10,7 +10,7 @@ function Home() {
         <h1>Welcome</h1>
         <h2>To the Budgeting App!</h2>
         <p className="moon">To the Moon! </p>
-        <Link to="/transactions"><img classname="background" src={background} alt="background"></img> </Link>
+        <Link to="/transactions"><img classname="background" src={background} alt="background" width="70%"></img> </Link>
         {/* <img src={logo} alt="logo" width="400px"></img> */}
         {/* <br></br><img src={moon} alt="moon" width="400px"></img> */}
         <br></br>
